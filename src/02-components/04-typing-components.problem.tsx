@@ -1,8 +1,12 @@
-import React from "react";
+import React from 'react'
 
-export const Button = (props: unknown) => {
-  return <button className={props.className}></button>;
-};
+interface ButtonProps {
+  className: string
+}
+
+export const Button = ({ className }: ButtonProps) => {
+  return <button className={className}></button>
+}
 
 const Parent = () => {
   return (
@@ -12,5 +16,5 @@ const Parent = () => {
 
       <Button className="my-class"></Button>
     </>
-  );
-};
+  )
+}
