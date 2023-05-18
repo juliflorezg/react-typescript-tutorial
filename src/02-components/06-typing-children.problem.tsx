@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-export const Button = (props: {}) => {
-  return <button>{props.children}</button>;
-};
+export const Button = (props: { children: React.ReactNode }) => {
+  return <button>{props.children}</button>
+}
 
 const Parent = () => {
   return (
@@ -11,5 +11,5 @@ const Parent = () => {
       <Button></Button>
       <Button>Hello world!</Button>
     </>
-  );
-};
+  )
+}
